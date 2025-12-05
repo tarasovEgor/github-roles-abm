@@ -1,0 +1,31 @@
+github-roles-abm/
+│
+├── data/
+│   ├── raw/          # исходные файлы из датасета Dataverse
+│   ├── processed/    # обработанные таблицы и графы
+│   └── README.md     # описание структуры данных
+│
+├── notebooks/
+│   ├── 01_exploration.ipynb       # разведочный анализ датасета
+│   ├── 02_feature_engineering.ipynb
+│   ├── 03_role_detection.ipynb    # кластеризация / ML
+│   ├── 04_graph_models.ipynb      # сетевой анализ / графы
+│   ├── 05_temporal_dynamics.ipynb # динамика ролей
+│   └── 06_conway_law.ipynb        # проверка теории Conway’s Law
+│
+├── src/
+│   ├── data_loading.py
+│   ├── graph_builder.py
+│   ├── role_models.py
+│   ├── temporal_analysis.py
+│   └── utils.py
+│
+├── models/          # сохранённые модели, веса, конфигурации
+│
+├── results/
+│   ├── figures/
+│   ├── tables/
+│   └── logs/
+│
+├── requirements.txt
+└── README.md
